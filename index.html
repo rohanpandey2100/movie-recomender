@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMatch // Movie Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CINEMATCH</h1>
+        <p>Find the perfect film based on your current vibe, genre preference, and available time.</p>
+    </header>
+
+    <main>
+        <section class="filter-container">
+            <div class="filter-group">
+                <label for="genreSelect">Genre</label>
+                <select id="genreSelect">
+                    <option value="all">All Genres</option>
+                    <option value="action">Action</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="horror">Horror</option>
+                    <option value="romance">Romance</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="mystery">Mystery</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="moodSelect">Mood</label>
+                <select id="moodSelect">
+                    <option value="all">All Moods</option>
+                    <option value="exciting">Exciting</option>
+                    <option value="mysterious">Mysterious</option>
+                    <option value="emotional">Emotional</option>
+                    <option value="chill">Chill / Relaxed</option>
+                    <option value="intense">Intense</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="timeSelect">Available Time</label>
+                <select id="timeSelect">
+                    <option value="all">Any Duration</option>
+                    <option value="90">Around 1.5 Hours (≤ 100 mins)</option>
+                    <option value="120">Around 2 Hours (101 - 135 mins)</option>
+                    <option value="180">Epic / Long (3 Hours / > 135 mins)</option>
+                </select>
+            </div>
+
+            <button id="filterBtn">Find Movies</button>
+        </section>
+
+        <section class="results-heading">
+            <h2 id="resultsCount">Showing all movies</h2>
+        </section>
+
+        <section class="movie-grid" id="movieGrid">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CineMatch. Built for film lovers.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
